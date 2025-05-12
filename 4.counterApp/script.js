@@ -2,15 +2,14 @@ const countDisplay = document.getElementById("count");
 const decreaseBtn = document.getElementById("decrease");
 const increaseBtn = document.getElementById("increase");
 const resetBtn = document.getElementById("reset");
+const sound = document.getElementById("click-sound");
 
-// sound
-const clickSound = document.getElementById("click-sound");
-
-/* “Try to get the saved counter value from localStorage, turn it into a number — and if that fails, just start at 0.” */
-let count = parseInt(localStorage.getItem("counterValue")) || 0;
+let count = parseInt(localStorage.getItem("countValue")) || 0;
 
 function updateDisplay() {
+  // h2 display
   countDisplay.textContent = count;
+
   if (count > 0) {
     countDisplay.style.color = "green";
   } else if (count < 0) {
@@ -18,30 +17,35 @@ function updateDisplay() {
   } else {
     countDisplay.style.color = "gray";
   }
-  localStorage.setItem("counterValue", count); // save to storage
-  animateCount();
+
+  // adding count to local storage
+  localStorage.setItem("countValue", count);
+
   playSound();
+  animateCount();
 }
 
-// Sound
+// sound
 function playSound() {
-  clickSound.currentTime = 0;
-  clickSound.play();
+  sound.currentTime = 0;
+  sound.play();
 }
 
 // animation
 function animateCount() {
   countDisplay.classList.add("animate");
-  setTimeout(() => countDisplay.classList.remove("animate"), 200);
+  setTimeout(() => {
+    countDisplay.classList.remove("animate"), 200;
+  });
 }
 
 increaseBtn.addEventListener("click", () => {
-  count++;
+  count = count + 1;
   updateDisplay();
 });
 
 decreaseBtn.addEventListener("click", () => {
-  count--;
+  count = count - 1;
   updateDisplay();
 });
 

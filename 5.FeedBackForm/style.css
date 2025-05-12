@@ -1,0 +1,57 @@
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color:thistle;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+.container{
+  background-color:burlywood;
+  height: 70vh;
+  width: 50%;
+  margin: 100px auto;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: bisque;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  height: 40vh;
+}
+
+button{
+  border: none;
+  height: 30px;
+  background-color:cadetblue;
+  color: white;
+  width: 90%;
+  margin: 1%;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:thistle;
+  color: black;
+}
+
+input, textarea{
+  border: none;
+  height: 50px;
+  width: 70%;
+  text-align: justify;
+  outline: 0;
+}
+
+
+
+
+

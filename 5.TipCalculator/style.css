@@ -1,0 +1,38 @@
+body{
+  text-align: justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: lavender;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+h1{
+  text-align: center;
+}
+
+input{
+  margin: 5px;
+  padding: 10px;
+  outline: 0;
+  border: none;
+  width: 100px;
+}
+
+#tip{
+  margin-left: 20%;
+}
+
+button{
+  height: 50px;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  background-color: burlywood;
+  font-size: 18px;
+  cursor: pointer;
+}

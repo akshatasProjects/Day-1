@@ -1,0 +1,33 @@
+<!DOCTYPE htmcalTipl>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <div class="container">
+      <form>
+        <label for="amount">Amount</label>
+        <input
+          type="number"
+          id="amount"
+          placeholder="Enter amount"
+          required /><br />
+        <label for="tip">Tip</label>
+        <input type="number" id="tip" placeholder="Tip" required /><br /><br />
+        <button id="calTip">Calculate Tip</button><br />
+        <span>-------------------------------</span>
+        <p id="result">
+          <span id="tipAmount">Tip Amount:</span><br />
+          <span id="Total">Total:</span>
+        </p>
+        <span>--------------------------------</span>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

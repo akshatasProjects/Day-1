@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Simple Image Gallery</h1>
+    <div class="gallery">
+      <img
+        src="https://images.pexels.com/photos/89778/strawberries-frisch-ripe-sweet-89778.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Gallery Image" />
+      <img
+        src="https://images.pexels.com/photos/68525/soap-colorful-color-fruit-68525.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Gallery Image" />
+      <img
+        src="https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Gallery Image" />
+      <img
+        src="https://images.pexels.com/photos/1414126/pexels-photo-1414126.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Gallery Image" />
+    </div>
+
+    <!-- modal -->
+    <div class="modal" id="modal">
+      <span class="close" id="closeBtn">&times;</span>
+      <span class="arrow left" id="prevBtn">&#8592;</span>
+      <img class="modal-content" id="modalImg" />
+      <span class="caption" id="caption"></span>
+      <span class="arrow right" id="nextBtn">&#8594;</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

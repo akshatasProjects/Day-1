@@ -48,6 +48,7 @@ function renderGroceryList() {
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "🗑️";
     deleteButton.style.marginLeft = "10px";
+    deleteButton.style.border = "none";
 
     deleteButton.addEventListener("click", (event) => {
       event.stopPropagation(); // Prevents the toggle click
